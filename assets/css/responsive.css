@@ -1,0 +1,238 @@
+
+@media (max-width: 1200px){
+	
+}
+
+@media (max-width: 992px){
+	/* Header */
+	.items-m li {
+	    margin: 0;
+	}
+
+	.content-ideas{
+		padding-left: 60px;
+		padding-right: 60px;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	
+	/* Footer */
+	.footer .contact{
+		margin-top: 2em;
+	}
+    
+}
+
+@media (max-width: 767px){
+  /*-----------------------------------------------
+  MOBILE
+  Content of mobile menu
+  -----------------------------------------------*/
+  .mobile {
+    float: right;
+    margin: 15px 25px 0 0;
+    position: relative;
+  }
+  /*-----------------------------------------------
+  LABEL
+  -----------------------------------------------*/
+  .mobile__label {
+    border: solid 2px white;
+    display: block;
+    overflow: hidden;
+    margin-left: auto;
+    padding: 12px 8px;
+    width: 45px;
+    white-space: nowrap;
+  }
+  .mobile__label :nth-child(2) .label__line {
+    transition-delay: .1s;
+  }
+  .mobile__label :nth-child(3) .label__line {
+    transition-delay: .2s;
+  }
+  .navbar-brand .brand img {
+    margin: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  /*LINES CONTENT*/
+  .mobile__label__content {
+    font-size: 0;
+    line-height: 0;
+    height: 2px;
+    margin-bottom: 5px;
+  }
+  .mobile__label__content:last-child {
+    margin-bottom: 0px;
+  }
+  /*WHITE LINES*/
+  .label__line {
+    background-color: #fff;
+    width: 24px;
+    height: 2px;
+    display: inline-block;
+    margin-left: -33px;
+    margin-right: 43px;
+    /*LINES ANIMATION*/
+    transition: margin-left 0.2s linear;
+  }
+  /*-----------------------------------------------
+  INPUT
+  -----------------------------------------------*/
+  .mobile__input {
+    display: none;
+  }
+  /*-----------------------------------------------
+  NAV
+  -----------------------------------------------*/
+  .mobile__nav {
+    margin-top: 10px;
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+    text-align: right;
+    transition: max-height 1s linear, max-width 0.8s linear;
+  }
+  .mobile__nav ul {
+    padding: 0;
+  }
+  .nav__item {
+    white-space: nowrap;
+  }
+  .nav__item a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 0px;
+    color: #fff;
+  }
+  .nav__item a:after {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    margin-left: auto;
+  }
+  .mobile__input:checked + .mobile__nav {
+    max-width: 150px;
+    max-height: 200px;
+  }
+  .mobile__input:checked + .mobile__nav ul li {
+    list-style-type: none;
+  }
+	/* Header */
+	.content-items {
+	    margin-top: 1.7em;
+	    background-color: rgba(6, 51, 81, .7);
+	    text-align: center;
+	    border-top: none;
+	    box-shadow: none;
+
+	}
+	.items-m li{
+		padding-top: 8px;
+    	padding-bottom: 8px;
+  }
+  .menu {
+    background-color: #000;
+    padding-top: 0;
+  }
+  .navbar.scrolled {
+    top: 0;
+  }
+	.menu .navbar-header .navbar-toggle{
+		margin-top: 15px;
+	}
+	.navbar-default .navbar-toggle,
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus{
+		background-color: #fff;
+		border-color: #fff;
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #888;
+	}
+
+
+	
+	.content-ideas .top-ideas{
+		font-size: 50px;
+	}
+
+	/* Items */
+	.items{
+		padding-bottom: 10em;
+	}
+	.item-final .txt-f{
+		text-align: center;
+		padding-bottom: 25px;
+	}
+
+	/* footer */
+	.footer .contact{
+		text-align: center;
+		margin-bottom: 20px;
+  }
+	.footer .fix-center {
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+	/* Header */
+	.brand img {
+    height: 75px;
+	}
+
+	/* Banner */
+	.intro h2 {
+    font-size: 28px;
+	}
+	.intro p{
+		font-size: 14px;
+	}
+
+
+	/* Ideas */
+	.content-ideas {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.content-ideas .top-ideas span,
+	.content-ideas .top-ideas {
+	    font-size: 35px;
+	}
+	.content-ideas .bottom-ideas{
+		font-size: 16px;
+	}
+	.content-ideas .btn-ideas {
+	    padding: 10px 10px;
+	    font-size: 14px;
+	}
+	.content-ideas .btn-ideas span.arrow{
+		margin-left: 5px;
+	}
+	.item-final img{
+		width: 70%;
+	}
+
+	/* Footer */
+	.footer .contact{
+		padding-left: 15px;
+	}
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .item.active.full-screen video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .item.active.full-screen video {
+    width: 300%;
+    left: -100%;
+  }
+}

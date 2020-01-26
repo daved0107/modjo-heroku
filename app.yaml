@@ -1,0 +1,17 @@
+service: default
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /
+  script: index.html
+- url: /index.html
+  script: index.html
+- url: /assets/(.*\.(css$|js$|svg$|jpg$|png$|gif$|mp4$|woff$|woff2$|ttf$|eot$|otf$))
+  static_files: assets/\1
+  upload: assets/.*\.(css$|js$|svg$|jpg$|png$|gif$|mp4$|woff$|woff2$|ttf$|eot$|otf$)
+  application_readable: true
+- url: /Fonts/(.*\.(css$|js$|svg$|jpg$|png$|woff$|woff2$|ttf$|eot$|otf$))
+  static_files: Fonts/\1
+  upload: Fonts/.*\.(css$|js$|svg$|jpg$|png$|woff$|woff2$|ttf$|eot$|otf$)
+  application_readable: true  
